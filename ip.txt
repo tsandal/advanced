@@ -6,3 +6,12 @@ TYPE="Ethernet"
 IPADDR="192.168.1.50"
 NETMASK="255.255.255.0"
 GATEWAY="192.168.1.254"
+
+
+
+
+yum provides */ifconfig
+yum -y install net-tools  bridge-utils psmisc lftp lrzsz
+yum list | grep bash
+yum -y install bash-completion.noarch     #tab
+
