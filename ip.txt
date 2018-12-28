@@ -15,3 +15,9 @@ yum -y install net-tools  bridge-utils psmisc lftp lrzsz
 yum list | grep bash
 yum -y install bash-completion.noarch     #tab
 
+
+
+
+vim /etc/sysconfig/network
+--->NOZEROCONF="yes"
+systemctl restart network       #禁止空路由
